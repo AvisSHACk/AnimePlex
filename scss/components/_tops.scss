@@ -1,0 +1,24 @@
+.tops {
+    width:48%;
+    &__title {
+        margin-top: .8rem;
+        margin-bottom: .8rem;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__img {
+        width:30%;
+    }
+
+    &__info {
+        padding-left:.6rem;
+
+        &title {
+            font-size:1rem;
+            margin-bottom: .6rem;
+        }
+    }
+}
