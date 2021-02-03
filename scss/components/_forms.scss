@@ -1,0 +1,12 @@
+.form {
+    display: flex;
+
+    &__text {
+        padding:.6rem .6rem;
+        width:100%;
+
+        @include from(medium) {
+            background-color: var(--thirdColor);
+        }
+    }
+}

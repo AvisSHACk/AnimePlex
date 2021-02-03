@@ -1,0 +1,124 @@
+.l-container,
+[class*="l-container--"] {
+  width: 90%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.l-container--row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+:root {
+  --body: #222222;
+  --firstColor: #1a1a20;
+  --thirdColor: #424248;
+  --textColor-title: #3b4248;
+  --textColor: #fff;
+  --borderBlue: #29abe2; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--body);
+  color: var(--textColor); }
+
+img {
+  width: 100%; }
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+input, textarea, button {
+  border: 0;
+  outline: 0;
+  color: var(--textColor); }
+
+.header {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .header__logo {
+    width: 40%; }
+    @media screen and (min-width: 1024px) {
+      .header__logo {
+        width: 20%; } }
+  @media screen and (min-width: 640px) {
+    .header_menu {
+      display: none; } }
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -12rem;
+  width: 12rem;
+  height: 100vh;
+  background-color: #3f51b5;
+  -webkit-transition: right .2s;
+  -o-transition: right .2s;
+  transition: right .2s;
+  padding-left: .8rem;
+  padding-right: .8rem; }
+  .menu.active {
+    right: 0; }
+  @media screen and (min-width: 640px) {
+    .menu ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+  .menu__item {
+    padding: 1rem 0; }
+    @media screen and (min-width: 640px) {
+      .menu__item {
+        padding-left: .8rem;
+        padding-right: .8rem; } }
+  @media screen and (min-width: 640px) {
+    .menu {
+      position: static;
+      height: auto;
+      width: auto;
+      padding: 0;
+      background: none; } }
+
+body {
+  position: relative;
+  right: 0;
+  -webkit-transition: right .2s;
+  -o-transition: right .2s;
+  transition: right .2s; }
+  body.active {
+    right: 12rem; }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .form__text {
+    padding: .6rem .6rem;
+    width: 100%; }
+    @media screen and (min-width: 640px) {
+      .form__text {
+        background-color: var(--thirdColor); } }

@@ -1,0 +1,54 @@
+.menu {
+    position:fixed;
+    top:0;
+    right:-12rem;
+
+    width:12rem;
+    height:100vh;
+    background-color:#3f51b5;
+    transition:right .2s;
+
+    padding-left:.8rem;
+    padding-right: .8rem;
+
+    &.active {
+        right:0;
+    }
+
+    ul {
+        @include from(medium) {
+            display: flex;
+            align-items:center;
+        }
+    }
+
+    &__item {
+        padding:1rem 0;
+
+        @include from(medium) {
+            padding-left:.8rem;
+            padding-right: .8rem;
+        }
+    }
+
+
+    @include from(medium) {
+        position:static;
+        height:auto;
+        width:auto;
+        padding:0;
+        background:none;
+    }
+
+}
+
+body {
+    position: relative;
+    right:0;
+
+    transition: right .2s;
+
+    &.active {
+        right: 12rem;
+    }
+}

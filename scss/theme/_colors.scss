@@ -1,0 +1,26 @@
+$vars: (
+    body: #222222,
+    firstColor: #1a1a20,
+    thirdColor: #424248,
+    // thirdColor: #90B1E1,
+    textColor-title: #3b4248,
+    textColor:#fff,
+    borderBlue: #29abe2,
+    // backColor:#ffffff,
+    // bodyBg: #000000,
+);
+
+ $firstColor: map-get($vars, firstColor);
+// $secondColor: map-get($vars, secondColor);
+ $thirdColor: map-get($vars, thirdColor);
+ $textColor: map-get($vars, textColor);
+ $textColor-title: map-get($vars, textColor);
+ $borderBlue: map-get($vars, borderBlue);
+// $backColor: map-get($vars, backColor);
+$body: map-get($vars, body);
+
+:root {
+    @each $key, $value in $vars {
+        --#{$key}: #{$value};
+    }
+}
