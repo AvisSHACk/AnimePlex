@@ -23,7 +23,7 @@
                     <li class="menu__item"><a class="menu__link" href="#">Pedidos</a></li>
                     <form class="form form--search" action="">
                         <input class="form__text" type="search" name="" placeholder="Buscar Anime">
-                        <button class="form__submit"></button>
+                        <button class="form__submit icon-search"></button>
                     </form>
                 </ul>
             </nav>
@@ -32,7 +32,7 @@
     <section class="updates">
         <div class="l-container--rowspace">
             <div class="tops">
-                <h3 class="tops__title">Tops de la semana</h3>
+                <h3 class="tops__title icon-star">Tops de la semana</h3>
                 <div class="tops__container">
                     <img class="tops__img" src="img/poster-1.png" alt="">
                     <div class="tops__info">
@@ -42,24 +42,34 @@
                 </div>
             </div>
             <div class="horario">
-                <h3 class="tops__title">Horario Semanal</h3>
-                <table>
-                    <tr>
-                        <th>Lun</th>
-                        <th>Mar</th>
-                        <th>Mie</th>
-                        <th>Jue</th>
-                        <th>Vie</th>
-                        <th>Sab</th>
-                        <th>Dom</th>
+                <h3 class="tops__title icon-calendar">Horario Semanal</h3>
+                <table class="horario__table">
+                    <tr class="horario__row">
+                        <th class="horario__column">Lun</th>
+                        <th class="horario__column">Mar</th>
+                        <th class="horario__column">Mie</th>
+                        <th class="horario__column">Jue</th>
+                        <th class="horario__column">Vie</th>
+                        <th class="horario__column">Sab</th>
+                        <th class="horario__column">Dom</th>
                     </tr>
+                    <tr class="horario__row">
+                        <td class="horario__column"><img src="img/emilia.png" alt=""></td>
+                        <td class="horario__column"><img src="img/lurisu.png" alt=""></th>
+                        <td class="horario__column">Mie</td>
+                        <td class="horario__column">Jue</td>
+                        <td class="horario__column">Vie</td>
+                        <td class="horario__column">Sab</td>
+                        <td class="horario__column">Dom</td>
+                    </tr>
+
                 </table>
             </div>
         </div>
     </section>
     <section class="chapters">
         <div class="l-container">
-            <h2 class="title-section">Ultimos capitulos</h2>
+            <h2 class="title-section icon-desktop">Ultimos capitulos</h2>
             <div class="chapters__container">
                 <article class="chapter">
                     <a href="#">
@@ -221,7 +231,7 @@
     </section>
     <section class="recents">
         <div class="l-container">
-            <h2 class="title-section">Animes recientes</h2>
+            <h2 class="title-section icon-folder">Animes recientes</h2>
             <div class="recents__container">
                 <div class="recent">
                     <a href="#">

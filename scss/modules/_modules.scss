@@ -1,3 +1,8 @@
+[class*="icon-"]:before{
+    position:relative;
+    top:2px;
+    margin-right:.6rem;
+}
 .l-container,
 [class*="l-container--"]{
     width:90%;
@@ -18,14 +23,15 @@
 }
 
 .title-section {
-    text-align:center;
-    padding-top:3rem;
-    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .updates {
     display: none;
-
+    background:#131313;
+    padding-top:2rem;
+    padding-bottom: 2rem;
     @include from(large) {
         display: block;
     }

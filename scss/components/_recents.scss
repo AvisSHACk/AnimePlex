@@ -1,4 +1,5 @@
 .recents {
+    background-color:#131313;
     &__container {
         @include from(medium) {
             display: flex;
